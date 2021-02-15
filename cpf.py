@@ -22,16 +22,7 @@ END = '\033[0m'
 RESET='\033[1;00m'
 
 
-# BANNER
 
-print ("""\033[91m
-   ___   ___   ___   _____      ___  _ 
-  / __| | _ \ | __| | _ \ \    / / \| |
- | (__  |  _/ | _|  |  _/\ \/\/ /| .` |
-  \___| |_|   |_|   |_|   \_/\_/ |_|\_|
-\033[0m"""
-
-cpf = raw_input('\033[93mCPF da vitima: \033[93m')
 
 # API
 req = requests.get("http://dabsistemas.saude.gov.br/sistemas/sadab/js/buscar_cpf_dbpessoa.json.php?cpf="+str(cpf))
